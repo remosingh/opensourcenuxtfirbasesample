@@ -13,13 +13,13 @@ opensourcenuxtfirbasesample is an open-source Nuxt.js project integrated with Fi
 
 Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-### Prerequisites
+## Prerequisites
 
 Before you begin, ensure you have the following installed:
 - Node.js
 - npm or yarn
 
-### Installation
+## Installation
 
 1. **Clone the repository:**
    ```bash
@@ -27,19 +27,19 @@ Before you begin, ensure you have the following installed:
 
 2. **Run NPM install:**
    ```bash
-   git clone https://github.com/remosingh/opensourcenuxtfirbasesample.git
+   npm install
 
-### Contributing
+## Contributing
 
-We welcome contributions to opensourcenuxtfirbasesample. Here's how you can contribute:
+I welcome contributions to opensourcenuxtfirbasesample. Here's how you can contribute:
 
-### Fork the Project
+## Fork the Project
 
 Create your Feature Branch (git checkout -b feature/YourAmazingFeature)
 Commit your Changes (git commit -m 'Add some AmazingFeature')
 Push to the Branch (git push origin feature/YourAmazingFeature)
 Open a Pull Request
 
-### License
+## License
 
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+This project is freely  available to anyone on the internet for personal or commercial use.
