@@ -1,14 +1,14 @@
 <template>
-  <LandingPage />
+  <LandingPage /> <!-- Render the LandingPage component within this template. -->
 </template>
 
 <script>
-import LandingPage from "~/components/index/LandingPage.vue";
+import LandingPage from "~/components/index/LandingPage.vue"; // Import the LandingPage component.
 
 export default {
-  name: "IndexPage",
+  name: "IndexPage", // The name of this Vue component.
   components: {
-    LandingPage,
+    LandingPage, // Register the LandingPage component for use within this component.
   },
 };
 </script>

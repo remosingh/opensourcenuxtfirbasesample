@@ -1,54 +1,27 @@
 <template>
   <div>
-    <section1 />
-    <section2 />
-    <section3 />
-    <section4 />
-    <section5 />
-    <section6 />
-
-    <div class="container mx-auto my-8">
-      <h1 class="text-4xl font-bold">Welcome to my landing page</h1>
-      <p class="text-lg">
-        This is a simple landing page built with Nuxt.js and Tailwind CSS.
-      </p>
-      <p v-if="walletAddress != ''">
-        Your Address is: <span>{{ walletAddress }}</span>
-      </p>
-      <p v-else>No Wallet has been connected yet</p>
-    </div>
+    <!-- The root element for this component. -->
+    <section1 /> <!-- Render the 'section1' component. -->
   </div>
 </template>
 
 <script>
 import section1 from "~/components/index/sections/section1.vue";
-import section2 from "~/components/index/sections/section2.vue";
-import section3 from "~/components/index/sections/section3.vue";
-import section4 from "~/components/index/sections/section4.vue";
-import section5 from "~/components/index/sections/section5.vue";
-import section6 from "~/components/index/sections/section6.vue";
 
 export default {
   components: {
-    section1,
-    section2,
-    section3,
-    section4,
-    section5,
-    section6,
+    section1, // Register the 'section1' component for use in this component.
   },
   data() {
     return {
-      walletAddress: "",
+      dataObjectName: "", // Initialize a data property called 'dataObjectName'.
     };
   },
   mounted() {
-    this.getWalletAdress();
+    // Code to be executed when this component is mounted in the DOM.
   },
   methods: {
-    getWalletAdress() {
-      this.walletAddress = localStorage.getItem("walletAddress");
-    },
+    // Custom methods for this component can be defined here.
   },
 };
 </script>

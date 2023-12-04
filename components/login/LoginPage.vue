@@ -28,13 +28,18 @@ export default {
   },
   methods: {
     async login(event) {
-        event.preventDefault();
+      event.preventDefault();
       try {
         await this.$fire.auth
           .signInWithEmailAndPassword(this.email, this.password)
           .then((response) => {
-              console.log(response)
-              this.$router.push("/");
+            console.log(response);
+            const email = response.user.email;
+            const message = `Logged in with email${
+              email ? " as " + email : ""
+            }`;
+            alert(message);
+            this.$router.push("/");
           });
       } catch (e) {
         console.log(e);

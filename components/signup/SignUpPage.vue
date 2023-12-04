@@ -34,7 +34,11 @@ export default {
         await this.$fire.auth
           .createUserWithEmailAndPassword(this.email, this.password)
           .then((response) => {
-            console.log(response);
+            const email = response.user.email;
+            const message = `Signed up with email${
+              email ? " as " + email : ""
+            }`;
+            alert(message);
             // This is to update the user state values
           })
           .then(() => {

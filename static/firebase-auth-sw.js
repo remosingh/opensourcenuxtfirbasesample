@@ -6,7 +6,7 @@ importScripts(
 importScripts(
   'https://www.gstatic.com/firebasejs/9.6.2/firebase-auth-compat.js'
 )
-firebase.initializeApp({"apiKey":"AIzaSyAY1dC0t5nPoaZDYNeiRsWLOfGmjE6rJbU","authDomain":"cryptoquiz-4b345.firebaseapp.com","databaseURL":"\u003CdatabaseURL\u003E","projectId":"cryptoquiz-4b345","storageBucket":"cryptoquiz-4b345.appspot.com","messagingSenderId":"884712040745","appId":"1:884712040745:web:91dccfd75509b5b80a2f38","measurementId":"G-7F3MGKWNQW"})
+firebase.initializeApp({"apiKey":"\u003CapiKey\u003E","authDomain":"\u003CauthDomain\u003E","projectId":"\u003CprojectId\u003E","storageBucket":"\u003CstorageBucket\u003E","messagingSenderId":"\u003CmessagingSenderId\u003E","appId":"\u003CappId\u003E","measurementId":"\u003CmeasurementId\u003E"})
 
 // Initialize authService
 const authService = firebase.auth()
