@@ -55,6 +55,7 @@ Before you begin, ensure you have the following installed:
       },
     ],
   ],
+
 Ensure the following Firebase details are provided from your firebase project settings. This is set in the nuxt.config.js file. Firebase can be setup from here: https://firebase.google.com/
 
 
@@ -65,6 +66,7 @@ Ensure the following Firebase details are provided from your firebase project se
 4. **Run the app:**
    ```bash
    npm run dev
+   
 You should now be able to use the skeleton app on the given url. Open the Terminal for the url.
 
 ## Contributing
