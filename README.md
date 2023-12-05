@@ -26,8 +26,6 @@ Before you begin, ensure you have the following installed:
    git clone https://github.com/remosingh/opensourcenuxtfirbasesample.git
 
 2. **Enter Firebase API information:**
-
-Ensure the following Firebase details are provided from your firebase project settings. This is set in the nuxt.config.js file. Firebase can be setup from here: https://firebase.google.com/
    ```bash
      modules: [
     [
@@ -57,6 +55,7 @@ Ensure the following Firebase details are provided from your firebase project se
       },
     ],
   ],
+Ensure the following Firebase details are provided from your firebase project settings. This is set in the nuxt.config.js file. Firebase can be setup from here: https://firebase.google.com/
 
 
 3. **Run NPM install:**
