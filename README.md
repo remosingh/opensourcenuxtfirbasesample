@@ -25,9 +25,47 @@ Before you begin, ensure you have the following installed:
    ```bash
    git clone https://github.com/remosingh/opensourcenuxtfirbasesample.git
 
+2. **Enter Firebase API information:**
+Ensure the following Firebase details are provided from your firebase project settings. This is set in the nuxt.config.js file. Firebase can be setup from here: https://firebase.google.com/
+   ```bash
+     modules: [
+    [
+      "@nuxtjs/firebase",
+      {
+        config: {
+          // REQUIRED: Official config for firebase.initializeApp(config):
+          apiKey: "<apiKey>",
+          authDomain: "<authDomain>",
+          projectId: "<projectId>",
+          storageBucket: "<storageBucket>",
+          messagingSenderId: "<messagingSenderId>",
+          appId: "<appId>",
+          measurementId: "<measurementId>",
+        },
+        services: {
+          auth: {
+            persistence: "local", // default
+            initialize: {
+              onAuthStateChangedMutation: "ON_AUTH_STATE_CHANGED_MUTATION",
+            },
+            ssr: true,
+          },
+          firestore: true,
+          storage: true,
+        },
+      },
+    ],
+  ],
+
+
 2. **Run NPM install:**
    ```bash
    npm install
+
+3. **Run NPM the app:**
+   ```bash
+   npm run dev
+You should now be able to use the skeleton app on the given url. Open the Terminal for the url.
 
 ## Contributing
 
